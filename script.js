@@ -12,10 +12,6 @@ function calculateProfitAndLoss(initial, quantity, current){
     }
 
     else{
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
         if(initial > current){
             var loss = (initial - current)* quantity;
