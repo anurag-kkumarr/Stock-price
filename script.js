@@ -6,6 +6,7 @@ var outputDiv = document.querySelector(".output");
 
 
 function calculateProfitAndLoss(initial, quantity, current){
+   
 
     if(initial < 0 || quantity< 0 || current < 0){
         outputDiv.innerText = "Enter correct amount";
@@ -31,11 +32,16 @@ function calculateProfitAndLoss(initial, quantity, current){
 }
 
 function clickHandler(){
-    var initialPriceValue = Number(initialPrice.value);
-    var quantityStocksValue = Number(quantityStocks.value);
-    var currentPriceValue = Number(currentPrice.value);
+    if(initialPrice.value === "" || quantityStocks.value === "" || currentPrice.value === ""){
+        outputDiv.innerText = "Fill in the boxes";
+    }
+    else{
+        var initialPriceValue = Number(initialPrice.value);
+        var quantityStocksValue = Number(quantityStocks.value);
+        var currentPriceValue = Number(currentPrice.value);
 
-    calculateProfitAndLoss(initialPriceValue, quantityStocksValue, currentPriceValue);
+        calculateProfitAndLoss(initialPriceValue, quantityStocksValue, currentPriceValue);
+    }
 }
 
 
