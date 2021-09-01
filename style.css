@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    
 }
 h1 {
     color: var(--secondary-color);
@@ -54,6 +55,21 @@ button {
 }
 
 .output {
-    color: var(--secondary-color);
+    color: white;
     font-weight: bold;
+    margin-top: 2rem;
+}
+footer {
+    bottom: 0px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.list-no-bullet {
+    list-style: none;
+}
+.list-inline {
+    display: inline;
+    padding-right: 1rem;
 }
