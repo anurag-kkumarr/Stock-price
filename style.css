@@ -52,6 +52,7 @@ button {
     color: var(--primary-color);
     font-weight: bold;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .output {
