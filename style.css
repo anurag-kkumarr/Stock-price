@@ -60,6 +60,12 @@ button {
     font-weight: bold;
     margin-top: 2rem;
 }
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--secondary-color);
+}
+
 footer {
     bottom: 0px;
     text-align: center;
