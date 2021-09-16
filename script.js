@@ -17,12 +17,12 @@ function calculateProfitAndLoss(initial, quantity, current){
         if(initial > current){
             var loss = (initial - current)* quantity;
             var lossPercent = (loss/(initial*quantity))* 100;
-            outputDiv.innerText = ` Hey loss is ₹${loss} and loss percent is ${lossPercent}%`;
+            outputDiv.innerText = ` Hey loss is ₹${loss} and loss percent is ${lossPercent.toFixed(2)}%`;
         }
         else if(initial < current){
             var profit = (current - initial)* quantity;
             var profitPercent = (profit/(initial* quantity))* 100;
-        outputDiv.innerText = `Hey your profit is ₹${profit} and profit percent is ${profitPercent}%`;
+        outputDiv.innerText = `Hey your profit is ₹${profit} and profit percent is ${profitPercent.toFixed(2)}%`;
         }
         else{
             outputDiv.innerText= "Lala Risk hai to Ishq hai";
